@@ -29,17 +29,20 @@ class XylophoneApp extends StatelessWidget {
         backgroundColor: Colors.black45,
         body: SafeArea(
           child: Center(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: <Widget>[
-                buildKey(color: Colors.purple[300], soundNumber: 1),
-                buildKey(color: Colors.blue[300], soundNumber: 2),
-                buildKey(color: Colors.amber[300], soundNumber: 3),
-                buildKey(color: Colors.green[400], soundNumber: 4),
-                buildKey(color: Colors.yellow[300], soundNumber: 5),
-                buildKey(color: Colors.red[400], soundNumber: 6),
-                buildKey(color: Colors.orange[300], soundNumber: 7),
-              ],
+            child: Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  buildKey(color: Colors.purple[300], soundNumber: 1),
+                  buildKey(color: Colors.blue[300], soundNumber: 2),
+                  buildKey(color: Colors.amber[300], soundNumber: 3),
+                  buildKey(color: Colors.green[400], soundNumber: 4),
+                  buildKey(color: Colors.yellow[300], soundNumber: 5),
+                  buildKey(color: Colors.red[400], soundNumber: 6),
+                  buildKey(color: Colors.orange[300], soundNumber: 7),
+                ],
+              ),
             ),
           ),
         ),
